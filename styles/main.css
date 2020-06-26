@@ -1,0 +1,448 @@
+    html {
+        font-size: 2vw;
+    }
+    
+    body {
+        background: linear-gradient(90deg, rgba(156, 134, 215, 0.6) 0%, rgba(19, 0, 128, 0.8) 0%, rgba(86, 7, 227, 0.7) 100%), url('../images/mountains.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: ghostwhite;
+        overflow: hidden;
+    }
+    
+    html,
+    body,
+    div#contents {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    #topBar {
+        position: fixed;
+    }
+    
+    .active {
+        display: block;
+    }
+    
+    .inactive {
+        display: none;
+    }
+    
+    #home,
+    #experienceHead,
+    #resumeHead,
+    #skillHead,
+    #projectHead {
+        position: absolute;
+    }
+    
+    #title,
+    #backToTop,
+    #namaste,
+    #projectHead,
+    .flip-box,
+    #experienceTitle,
+    #skillTitle,
+    #resumeTitle {
+        text-shadow: 5px 5px 20px #000000;
+        width: 100%;
+        height: auto;
+        font-family: 'MuseoModerno', cursive;
+        font-size: x-large;
+        padding: 20px;
+    }
+    
+    #experienceTitle,
+    #skillTitle,
+    #resumeTitle {
+        text-align: center;
+        margin-top: -15px;
+    }
+    
+    #topBar a {
+        color: ghostwhite;
+    }
+    
+    #topBar a:hover {
+        text-decoration: none;
+        color: ghostwhite;
+    }
+    
+    #topBar {
+        z-index: 5;
+    }
+    
+    .projectTile {
+        border: none;
+        border-radius: 20px;
+    }
+    
+    .projectDes {
+        padding: 15%;
+        text-align: center;
+    }
+    
+    #nav {
+        text-shadow: 5px 5px 20px #000000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-family: 'MuseoModerno', cursive;
+        font-size: x-large;
+        padding: 20px;
+    }
+    
+    #nav a {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    #backToTop {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+    }
+    
+    #experienceScroll div img {
+        width: 10vw;
+        height: 10vw;
+        border: none;
+    }
+    
+    #namaste,
+    #projectTitle,
+    #projectScroll {
+        position: relative;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        transition: all 0.6s;
+    }
+    
+    #projectScroll li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #projectScroll {
+        position: relative;
+        left: 40vw;
+        margin-top: -12vh;
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .projectTile {
+        width: 45vw;
+        height: 51vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: scroll;
+    }
+    
+    .activeScroll #projectScroll {
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        transition: all 0.6s;
+    }
+    
+    .flip-box {
+        background-color: transparent;
+        width: 150%;
+        height: max-content;
+        perspective: 1000vw;
+        padding: 20px;
+    }
+    
+    .flip-box-inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-box-front,
+    .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-box-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
+    .flip-box ul {
+        width: auto;
+        height: auto;
+        text-align: center;
+        list-style: none;
+        font-size: 0.8em;
+    }
+    
+    .flip-box li::before {
+        content: '\1F449';
+        margin-left: -20px;
+        margin-right: 10px;
+    }
+    
+    #experienceScroll {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: -20px;
+        padding-top: 0;
+    }
+    
+    #languages,
+    #technologies,
+    #attributes {
+        font-family: 'MuseoModerno', cursive;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .badge {
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Comfortaa', cursive;
+        font-size: 0.7rem;
+    }
+    
+    #skillContent {
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #skillWrapper,
+    #experienceWrapper,
+    #resumeWrapper {
+        padding-top: 15vh;
+    }
+    
+    #resumeContent {
+        height: 55vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: blue none;
+    }
+    
+    #resumeContent::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    #resumeContent::-webkit-scrollbar-track {
+        background: none;
+    }
+    
+    #resumeContent::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 20px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+    
+    .btn {
+        font-size: 1em;
+    }
+    
+    .activeScroll #projectTitle {
+        opacity: 0.6;
+    }
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    
+    @media screen and (max-width: 800px) {
+        #namaste {
+            top: 30vh;
+            opacity: 1;
+        }
+        #projectTitle,
+        .activeScroll #projectTitle {
+            top: 20vh;
+            opacity: 1;
+        }
+        #projectScroll {
+            top: 55vh;
+            left: 0;
+            padding: 0;
+        }
+        .projectTile {
+            width: 70vw;
+            height: 70vw;
+        }
+        .projectDes {
+            padding: 10%;
+        }
+        #backToTop {
+            padding: 10px;
+        }
+        #experienceScroll {
+            border-left: 3px solid rgba(244, 232, 255, 0.7);
+            margin: auto;
+            width: 85%;
+            height: 65vh;
+            display: block;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .flip-box {
+            width: 85%;
+            height: 50%;
+            margin-top: 30%;
+        }
+        #experienceScroll {
+            scrollbar-width: thin;
+            scrollbar-color: blue none;
+        }
+        /* Works on Chrome/Edge/Safari */
+        #experienceScroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        #experienceScroll::-webkit-scrollbar-track {
+            background: none;
+        }
+        #experienceScroll::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 20px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        #languages,
+        #technologies,
+        #attributes {
+            font-size: 2em;
+        }
+        .badge {
+            font-size: 0.8em;
+        }
+        #skillContent {
+            height: 65vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: blue none;
+        }
+        #skillContent::-webkit-scrollbar {
+            width: 8px;
+        }
+        #skillContent::-webkit-scrollbar-track {
+            background: none;
+        }
+        #skillContent::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 20px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        #resumeContent {
+            height: 65vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: blue none;
+        }
+        #resumeContent::-webkit-scrollbar {
+            width: 8px;
+        }
+        #resumeContent::-webkit-scrollbar-track {
+            background: none;
+        }
+        #resumeContent::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 20px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .flip-box {
+            width: 85%;
+            height: 125%;
+            margin-top: 30%;
+            cursor: pointer;
+        }
+        #topBar a {
+            font-size: 0.8em;
+            transition: all 0.5s;
+        }
+    }
+    
+    #contents::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #projectScroll::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .projectTile::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE and Edge */
+    
+    #contents,
+    #projectScroll,
+    .projectTile {
+        -ms-overflow-style: none;
+    }
+    
+    .flip-in-hor-top {
+        -webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2020-6-25 17:57:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+    /**
+ * ----------------------------------------
+ * animation flip-in-hor-top
+ * ----------------------------------------
+ */
+    
+    @-webkit-keyframes flip-in-hor-top {
+        0% {
+            -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes flip-in-hor-top {
+        0% {
+            -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
