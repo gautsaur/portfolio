@@ -30,6 +30,7 @@
         display: none;
     }
     
+
     #home,
     #experienceHead,
     #resumeHead,
@@ -61,13 +62,14 @@
         margin-top: -15px;
     }
     
-    #topBar a {
+    #topBar a,#backToTop a {
         color: ghostwhite;
     }
     
-    #topBar a:hover {
+    #nav a:hover, #name a:hover, #links a:hover, #backToTop a:hover {
         text-decoration: none;
-        color: ghostwhite;
+        transform: scale(1.05);
+        color: rgb(10, 167, 88);
     }
     
     #topBar {
