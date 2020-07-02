@@ -27,7 +27,7 @@
     #resumeHead,
     #skillHead,
     #projectHead {
-        position: absolute;
+        position: fixed;
     }
     
     .active{
