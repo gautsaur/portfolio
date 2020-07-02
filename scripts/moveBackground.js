@@ -1,3 +1,7 @@
+
+    var up=0;
+    var down=0;
+
 $(document).ready(function() {
     $("#projectScroll").on("scroll", function(e) {
         horizontal = e.currentTarget.scrollLeft;
@@ -22,7 +26,7 @@ function clickBulk() {
         event.preventDefault();
         var goToPage = $($(this).attr("href"));
         var activePage = $(".active");
-        activePage.attr("class", 'inactive').queue(goToPage.attr("class", "active flip-in-hor-top"));
+        activePage.attr("class", 'slide-out-right').queue(goToPage.attr("class", "active slide-in-right"));
     });
 }
 
