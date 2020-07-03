@@ -17,11 +17,11 @@
         height: 100%;
         margin: 0;
     }
-    
-    #topBar {
+
+    #topBar{
         position: fixed;
     }
-    
+
     #home,
     #experienceHead,
     #resumeHead,
@@ -70,6 +70,17 @@
         color: rgb(10, 167, 88);
     }
     
+    .projectDes a i{
+        margin: 10px;;
+    }
+
+    .projectDes a i:hover{
+        text-decoration: none;
+        transform: scale(1.2);
+        color: rgb(10, 167, 88);    
+    }
+
+
     #topBar {
         z-index: 5;
     }
