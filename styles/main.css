@@ -148,6 +148,47 @@
         padding-right: 10px;
     }
     
+    .paddle{
+        position: absolute;
+        margin-top: -12vh;
+        width: auto;
+        height: 15vh;
+        background:rgba(0,0,0,0.7);
+        background-size: 100%;
+        transition: background-size 1s 0s;    
+        padding: 10px;
+    }
+
+    .paddle:hover{
+        background:black;
+        transform: scale(1.2);
+        transition: all 0.2s;
+    }
+
+    .paddle:active{
+        color: coral;
+    }
+
+    .paddle i{
+        position: relative;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+    .right-paddle{
+        right: 0;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .left-paddle{
+        display: none;
+        left:0;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
     #projectScroll {
         position: relative;
         left: 40vw;
@@ -307,6 +348,11 @@
             left: 0;
             padding: 0;
         }
+
+        .right-paddle,.left-paddle{
+            top:60vh;
+        }
+
         .projectTile {
             width: 70vw;
             height: 70vw;
