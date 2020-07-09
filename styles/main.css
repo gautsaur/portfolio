@@ -37,6 +37,7 @@
         display: none;
     }
 
+
     #title,
     #backToTop,
     #namaste,
@@ -331,6 +332,12 @@
     .activeScroll #projectTitle {
         opacity: 0.6;
     }
+
+    #home{
+        z-index: -1;
+    }
+
+
     /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
     
     @media screen and (max-width: 800px) {
