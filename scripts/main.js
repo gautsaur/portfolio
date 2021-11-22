@@ -1,5 +1,23 @@
 
 $(document).ready(function () {
+    projectScroll();
+
+    $("[href=projectHead]").on('click',function(){
+        projectScroll();
+    });
+
+    paddles();
+    disableButtons();
+    clickBulk();
+
+    $('.paddle').hover(function(){
+        $(this).addClass("paddle-hover");
+    }, function(){
+        $(this).removeClass("paddle-hover");
+    });
+});
+
+function projectScroll(){
     $("#projectScroll").on("scroll", function (e) {
         horizontal = e.currentTarget.scrollLeft;
         if (horizontal >= 51) {
@@ -18,10 +36,7 @@ $(document).ready(function () {
             $('.right-paddle').fadeIn();
         }
     });
-    paddles();
-    disableButtons();
-    clickBulk();
-});
+}
 
 function clickBulk() {
     $("#nav a, #name a, #backToTop a").on('click', function (event) {
@@ -64,3 +79,4 @@ function paddles() {
         }
     });
 }
+

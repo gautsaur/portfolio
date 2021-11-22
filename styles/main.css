@@ -3,11 +3,32 @@
     }
     
     body {
-        background: linear-gradient(90deg, rgba(79, 68, 128, 0.7) 0%, rgba(54, 44, 112, 0.7) 0%, rgba(13, 7, 75, 0.7) 100%),url('../images/homeBack.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background: #005AA7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: 400% 400%;
+        animation: Gradient 25s ease infinite;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        padding:0;
+        margin:0px;
+        overflow: hidden;
         color: ghostwhite;
         overflow: hidden;
+    }
+
+    /* Animate Background*/
+    @keyframes Gradient {
+        0% {
+        background-position: 40% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 40% 50%;
+        }
     }
 
     html,
@@ -156,11 +177,12 @@
         height: 15vh;
         background:rgba(0,0,0,0.7);
         background-size: 100%;
-        transition: background-size 1s 0s;    
+        transition: background-size 1s 0s;
         padding: 10px;
+        z-index: 1999;
     }
 
-    .paddle:hover{
+    .paddle-hover{
         background:black;
         transform: scale(1.2);
         transition: all 0.2s;
