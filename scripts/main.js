@@ -46,7 +46,7 @@ function clickBulk() {
         event.preventDefault();
         var goToPage = $($(this).attr("href"));
         var activePage = $(".active");
-        activePage.attr("class", 'slide-out-right').queue(goToPage.attr("class", "active slide-in-right"));
+        activePage.attr("class", 'inactive slide-out-right').queue(goToPage.attr("class", "active slide-in-right"));
     });
 }
 
