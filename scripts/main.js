@@ -2,10 +2,6 @@
 $(document).ready(function () {
     projectScroll();
 
-    $("[href=projectHead]").on('click',function(){
-        projectScroll();
-    });
-
     paddles();
     disableButtons();
     clickBulk();

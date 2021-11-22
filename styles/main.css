@@ -59,6 +59,10 @@
     }
 
 
+    #namaster .mainHead{
+        font-size: 7.5vw;
+    }
+
     #title,
     #backToTop,
     #namaste,
@@ -126,6 +130,14 @@
         padding: 15%;
         text-align: center;
     }
+
+    .projectDes .title{
+        font-size: 1.2em;
+    }
+    .projectDes .subTitle{
+        font-size: 0.8em;
+    }
+    
     
     #nav {
         text-shadow: 5px 5px 20px #000000;
@@ -358,13 +370,13 @@
     #home{
         z-index: -1;
     }
+   
 
 
     /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
     
     @media screen and (max-width: 800px) {
         #namaste {
-            
             opacity: 1;
         }
         #projectTitle,
@@ -380,6 +392,13 @@
 
         .right-paddle,.left-paddle{
             top:60vh;
+        }
+
+        .projectDes .title{
+            font-size: 0.8em;
+        }
+        .projectDes .subTitle{
+            font-size: 0.6em;
         }
 
         .projectTile {
@@ -477,7 +496,12 @@
         }
     }
     
+
     @media screen and (max-width: 500px) {
+        #namaste .mainhead{
+            font-size: 1.5rem;
+        }
+
         .flip-box {
             width: 85%;
             height: 125%;
@@ -489,7 +513,8 @@
             transition: all 0.5s;
         }
     }
-    
+
+
     #contents::-webkit-scrollbar {
         display: none;
     }
