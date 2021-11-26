@@ -96,7 +96,7 @@
         <!-----------------------HOMEPAGE START----------------->
         <div class="active" id="home" style="width: 100%; height: 100%;">
             <div id="namaste">
-                <div class="mainHead">namaste<span style="font-family: 'Poppins', sans-serif;font-size:2.5vw; padding-left: 10px;">नमस्ते</span></div>
+                <div class="mainHead">namaste<span id="namasteText">नमस्ते</span></div>
                 <div class="subHead">i am a software engineer.</div>
                 <div class="subHeadtag">i build solutions.</div>
 
@@ -169,9 +169,11 @@
                 </li>
             </ul>
             <div class="right-paddle paddle">
-                <i class="fa fa-chevron-right"></i> </div>
+                <i class="fa fa-chevron-right"></i>
+            </div>
             <div class="left-paddle paddle">
-                <i class="fa fa-chevron-left"></i> </div>
+                <i class="fa fa-chevron-left"></i>
+            </div>
         </div>
         <!-----------------------PROJECT END----------------->
 
@@ -183,38 +185,26 @@
                     <!-----------------------LANGUAGES START----------------->
                     <div id="languages" class="row">
                         <p class="col-lg-3">Languages</p>
-                        <p class="col-lg-9"><span class="badge badge-primary">C#</span><span
-                                class="badge badge-primary">C</span><span class="badge badge-primary">Java</span><span
-                                class="badge badge-primary">Python</span><span class="badge badge-primary">Web
-                                Essentials (HTML, CSS, <i class="fab fa-js"></i>)</span></p>
+                        <p class="col-lg-9"><span class="badge badge-primary">Python</span><span
+                                class="badge badge-primary">C#</span><span class="badge badge-primary">C /
+                                C++</span><span class="badge badge-primary">Java</span><span
+                                class="badge badge-primary">HTML / CSS / JS</span><span
+                                class="badge badge-primary">SQL</span></p>
                     </div>
                     <!-----------------------LANGUAGES END----------------->
 
                     <!-----------------------TECHNOLOGIES START----------------->
                     <div id="technologies" class="row">
                         <p class="col-lg-3">Technologies</p>
-                        <p class="col-lg-9"><span class="badge badge-danger">Gradle</span><span
-                                class="badge badge-danger">Maven</span><span class="badge badge-danger">Automation
-                                (Selenium, Travis CI)</span><span class="badge badge-danger">React</span><span
-                                class="badge badge-danger">Bootstrap</span>
-                            <span class="badge badge-danger">Unity</span><span class="badge badge-danger">.NET
-                                Standard</span><span class="badge badge-danger">CMS (TerminalFOUR)</span><span
-                                class="badge badge-danger">Git</span><span class="badge badge-danger">ARM
-                                (none-eabi)</span><span></span></p>
+                        <p class="col-lg-9"><span class="badge badge-danger">Django</span><span
+                                class="badge badge-danger">Selenium (Webdriver)</span><span
+                                class="badge badge-danger">Content Management System (TerminalFOUR)</span>
+                            <span class="badge badge-danger">MySQL</span><span
+                                class="badge badge-danger">Bootstrap</span><span class="badge badge-danger">WPF /
+                                Windows Desktop Platform</span>
+                        </p>
                     </div>
                     <!-----------------------TECHNOLOGGIES END----------------->
-
-                    <!-----------------------ATTRIBUTES STARTS----------------->
-                    <div id="attributes" class="row">
-                        <p class="col-lg-3">Attributes</p>
-                        <p class="col-lg-9"><span class="badge badge-warning">Software Development (Agile, Scrum,
-                                Kanban)</span><span class="badge badge-warning">Project Management and Version
-                                Control</span><span class="badge badge-warning">Data Handling and
-                                Documentation<br>(Google Suite, Office Suite, LaTex)</span>
-                            <span class="badge badge-warning">Problem Solving</span><span
-                                class="badge badge-warning">Teamwork</span></p>
-                    </div>
-                    <!-----------------------ATTRIBUTES END----------------->
 
                 </div>
             </div>
@@ -227,97 +217,74 @@
             <div id="experienceWrapper">
                 <div id="experienceTitle" style="font-size: 7.5vw;">experience</div>
                 <div id="experienceScroll">
-                    <!-----------------------EXPERIENCE 1 START----------------->
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div style="text-align: center;">
-                                    <img src="images/ISU-verticalorangewhite.png" style="object-fit: contain;">
+                    <div class="experienceContainer">
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <div class="header">
+                                    <img alt="ISU logo" src="images/ISU-verticalorangewhite.png" />
+                                    <div class="jobDesWrapper">
+                                        <h3>Fullstack Web Developer Intern</h3>
+                                        <p class="jobDate">Sept 2021- Present</p>
+                                    </div>
                                 </div>
-                                <p style="text-align: center;  margin-top: auto; padding-left: 2%;font-size:1.1em;">
-                                    Full-stack Developer Intern<br><span style="font-size: 0.8em;">Continuing Education and Workforce Training</span><br><span style="font-size: 0.7em;">Sept 2021 -
-                                        Present</span>
-                                </p>
-                            </div>
-                            <div class="flip-box-back">
-                                <ul>
-                                    <li>Design and develop Python Django framework for CEWT's website.
-                                    </li>
-                                    <li>Modify and maintain ISU's Tech -Cafe Point of Self system to handle dynamic locations and users.
-                                    </li>
-                                </ul>
+                                <p>Design and develop Python Django framework for CEWT's website.</p>
+                                <p>Modify and maintain ISU's Tech -Cafe Point of Self system to handle dynamic locations and users.</p>
                             </div>
                         </div>
-                    </div>
-                    <!-----------------------EXPERIENCE 1 END----------------->
 
-                    <!-----------------------EXPERIENCE 2 START----------------->
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div style="text-align: center;">
-                                    <img src="images/Iteris_logo.jpg" style="object-fit: contain;">
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <div class="header">
+                                    <img alt="ISU logo" src="images/Iteris_logo.png" />
+                                    <div class="jobDesWrapper">
+                                        <h3>Software Development Intern</h3>
+                                        <p class="jobDate">Feb 2021- Sept 2021</p>
+                                    </div>
                                 </div>
-                                <p style="text-align: center;  margin-top: auto; padding-left: 2%;font-size:1.1em;">
-                                   Software Development Intern<br><span style="font-size: 0.8em;">Iteris Inc.</span><br><span style="font-size: 0.7em;">Feb 2021 - Sept 2021</span>
-                                </p>
-                            </div>
-                            <div class="flip-box-back">
-                                <ul>
-                                    <li>Learn and understand Software Quality Assurance framework, testing types, application of testing frameworks and the benefits to the product business and team.</li>
-                                    <li>Create a comprehensive test script for the Iteris ClearFleet application that includes complete acceptance criteria and prioritization of functional areas for testing.</li>
-                                    <li>Define a plan to automate the test scripts defined to generate operating leverage on the software team and improve the overall quality of solutions delivered.</li>
-                                </ul>
+                                <p>Learn and understand Software Quality Assurance framework, testing types, application of testing frameworks and the benefits to the product business and team.</p>
+                                <p>Create a comprehensive test script for the Iteris ClearFleet application that includes complete acceptance criteria and prioritization of functional areas for testing.</p>
+                                <p>Define a plan to automate the test scripts defined to generate operating leverage on the software team and improve the overall quality of solutions delivered.</p>
                             </div>
                         </div>
-                    </div>
-                    <!-----------------------EXPERIENCE 2 END----------------->
 
-                    <!-----------------------EXPERIENCE 3 START----------------->
-                    <div class="flip-box" style="height: 85%;">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div style="text-align: center;">
-                                    <img src="images/ISU-verticalorangewhite.png" style="object-fit: contain;">
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <div class="header">
+                                    <img alt="ISU logo" src="images/ISU-verticalorangewhite.png" />
+                                    <div class="jobDesWrapper">
+                                        <h3>Software Engineer Intern</h3>
+                                        <p class="jobDate">Oct 2021- Feb 2021</p>
+                                    </div>
                                 </div>
-                                <p style="text-align: center;  margin-top: auto; padding-left: 2%;font-size:1.1em;">
-                                    Software Enginner Intern<br><span style="font-size: 0.8em;">College of Business</span><br><span style="font-size: 0.7em;">Jan 2019 - Nov 2019</span>
-                                </p>
-                            </div>
-                            <div class="flip-box-back">
-                                <ul>
-                                    <li>Researched and collected information for an application that implements a text-based encryption to prevent the evident quantum technology and its power to decode the current encryption algorithms.</li>
-                                    <li>Learned about socket programming and network protocols to monitor data packets and behavior of the data stream over different internet protocols.</li>
-                                </ul>
-                            </div>
+                                <p>Researched and collected information for an application that implements a text-based encryption to prevent the evident quantum technology and its power to decode the current encryption algorithms.</p>
+                                <p>Learned about socket programming and network protocols to monitor data packets and behavior of the data stream over different internet protocols.</p>
+                                </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-left">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <div class="header">
+                                    <img alt="ISU logo" src="images/ISU-verticalorangewhite.png" />
+                                    <div class="jobDesWrapper">
+                                        <h3>Web Development Intern</h3>
+                                        <p class="jobDate">Feb 2020- Oct 2020</p>
+                                    </div>
+                                </div>
+                                <p>Worked within the content management system for the university's website to optimize the use of the site.</p>
+                                <p>Used web essentials like HTML, CSS, JavaScript, jQuery, and Bootstrap for the development of the website to create custom content types and programmable layouts.</p>
+                                </div>
                         </div>
                     </div>
-                    <!-----------------------EXPERIENCE 3 END----------------->
-
-                    <!-----------------------EXPERIENCE 4 START----------------->
-                    <div class="flip-box" style="height: 85%;">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div style="text-align: center;">
-                                    <img src="images/ISU-verticalorangewhite.png" style="object-fit: contain;">
-                                </div>
-                                <p style="text-align: center;  margin-top: auto; padding-left: 2%;font-size:1.1em;">
-                                    Web Development Intern<br><span style="font-size: 0.8em;">Marketing and Communications</span><br><span style="font-size: 0.7em;">Jan 2019 - Nov 2019</span>
-                                </p>
-                            </div>
-                            <div class="flip-box-back">
-                                <ul>
-                                    <li>Worked within the content management system for the university's website to optimize the use of the site.</li>
-                                    <li>Used web essentials like HTML, CSS, JavaScript, jQuery, and Bootstrap for the development of the website to create custom content types and programmable layouts.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-----------------------EXPERIENCE 4 END----------------->
-
                 </div>
             </div>
         </div>
+
+
+
         <!-----------------------EXPERIENCE END----------------->
 
 
@@ -331,7 +298,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div>
-                                <p style="font-size: 1.5rem;">Profile</p>
+                                <p style="font-size: 1.5rem;">About</p>
                             </div>
                         </div>
                         <div class="col-md-8" style="padding-left:20px;">
@@ -358,9 +325,9 @@
                                     <p>Idaho State University</p>
                                     <p>B.S. in Computer Science <span class="badge badge-primary"><em>2018 -
                                                 Present</em></span></p>
-                                    <p>Junior with GPA 3.61.</p>
+                                    <p>Junior with GPA 3.84.</p>
                                 </div>
-                                <hr style="border: 2px solid white;">
+                                
                                 <div class="education-info">
                                     <img class="img-fluid" src="images/output-onlinepngtools.png" alt="Image"
                                         style="width:25vw;border:none;object-fit: contain;">
@@ -387,7 +354,8 @@
                                         class="badge badge-info">Music</span><span
                                         class="badge badge-info">Soccer</span><span
                                         class="badge badge-info">Cricket</span><span
-                                        class="badge badge-info">Gaming</span></p>
+                                        class="badge badge-info">Gaming</span>
+                                </p>
                             </div>
                         </div>
                     </div>
