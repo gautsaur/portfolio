@@ -29,7 +29,7 @@
     }
 
     #namaste{
-        border-left: 50px solid ghostwhite;
+        border-left: 50px solid #f87c7c;
         background-color: rgba(255, 255, 255, 0.2);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
